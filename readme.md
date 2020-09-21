@@ -1,6 +1,6 @@
 # App : Weather man
 
-### 1. For a given year display the highest temperature and day, lowest temperature and day, most humid day and humidity.
+### 1. For a given year display the highest temperature and day, lowest temperature and day, most humid day and humidity. 
 
  ruby weatherman.rb -e 2002 /path/to/filesFolder
 * Highest: 45C on June 23
