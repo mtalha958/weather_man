@@ -32,7 +32,7 @@ class WeatherMan
 
 	# find Highest, lowest temperature and most humidity
 	# example cmd input   ruby weather_man.rb -e 2006 Dubai_weather
-  def t_HLM
+    def t_HLM
 		year, month = @date.split('/')
     if !month.nil?
 			puts 'You cannot give month value with this option'
@@ -44,7 +44,6 @@ class WeatherMan
 				if file_name.include? year
 					count += 1
 					file = @location + '/' + file_name
-
 						contents = CSV.open file, headers: true, header_converters: :symbol
 						contents.each do |row|
 							if highest_t < (row[:max_temperaturec] == nil ? 0 : row[:max_temperaturec].to_i)
